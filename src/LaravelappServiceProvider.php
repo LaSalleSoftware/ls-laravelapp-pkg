@@ -25,7 +25,7 @@ namespace Lasallesoftware\Laravelapp;
 // Laravel 
 use Illuminate\Support\ServiceProvider;
 
-class LibrarybackendServiceProvider extends ServiceProvider
+class LaravelappServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -53,8 +53,20 @@ class LibrarybackendServiceProvider extends ServiceProvider
      * have been registered, meaning you have access to all other services that have been registered by the framework"
      * (https://laravel.com/docs/5.6/providers)
      */
-    public function boot(Router $router)
+    public function boot()
     {
-        // blank on purpose
+        $this->loadRoutes();
+    }
+
+
+    /**
+     * Load this package's routes
+     *
+     * @return void
+     */
+    protected function loadRoutes()
+    {
+        $this->loadRoutesFrom(__DIR__.'/../routes/bob.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/console.php');      
     }
 }
