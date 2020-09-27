@@ -14,7 +14,9 @@ This package is the Laravel Application (not the framework) transmuted into a pa
 
 The Laravel Application GitHub repository is at <a href="https://github.com/laravel/laravel">https://github.com/laravel/laravel</a>.
 
-The entire point of this exercise is to update this package once, instead of updating all LaSalle Software apps, when the Laravel App is updated. 
+The purpose of packaging up the Laravel app is to simplify the exercise of updating LaSalle Software front-end and back-end apps to the latest Laravel version. 
+
+See my online doc at <a href="http://lasallesoftware.ca/docs/v2/gettingstarted_laravelapp">http://lasallesoftware.ca/docs/v2/gettingstarted_laravelapp</a>.
 
 ## Security
 

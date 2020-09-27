@@ -66,7 +66,9 @@ class LaravelappServiceProvider extends ServiceProvider
      */
     protected function loadRoutes()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/bob.php');
-        $this->loadRoutesFrom(__DIR__.'/../routes/console.php');      
+        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/channels.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/console.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');  
     }
 }
