@@ -28,6 +28,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     // protected $namespace = 'App\\Http\\Controllers';
 
+    
+
     /**
      * Define your route model bindings, pattern filters, etc.
      *
@@ -35,19 +37,32 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->configureRateLimiting();
+        if (env('LASALLE_APP_NAME') == "adminbackendapp") {
+            $this->configureRateLimiting();
+        }
+
+        // L8 Upgrade: Automatic Controller Namespace Prefixing
+        // (https://laravel.com/docs/8.x/upgrade, scroll down)
+        // the shipped App\Providers\RouteServiceProvider's namespace property defults to null
+        // I am going to comment it out instead of deleting it for reference only
+        if (env('LASALLE_APP_NAME') == "adminbackendapp") {
+
+            $this->routes(function () {
+                Route::prefix('api')
+                    ->middleware('api')
+                    ->namespace($this->namespace)
+                    //->group(base_path('routes/api.php'));
+                    ->group(__DIR__.'/../../routes/api.php')
+                ;            
+            });
+        }
 
         $this->routes(function () {
-            Route::prefix('api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                //->group(base_path('routes/api.php'));
-                ->group(__DIR__.'/../../routes/api.php');
-
             Route::middleware('web')
                 ->namespace($this->namespace)
                 //->group(base_path('routes/web.php'));
-                ->group(__DIR__.'/../../routes/web.php');
+                ->group(__DIR__.'/../../routes/web.php')
+            ;
         });
     }
 
