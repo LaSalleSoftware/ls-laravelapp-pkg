@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+if (! config('lasallesoftware-libraryfrontend.lasalle_suppress_index_route_in_laravelapp_package')) {
+
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    
+}
