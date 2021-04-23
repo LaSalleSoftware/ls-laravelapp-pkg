@@ -1,6 +1,9 @@
 # CHANGE LOG
 
-## VERSION 1.0.5 (Coming!)
+## VERSION 1.0.6 (Coming!)
+
+## VERSION 1.0.5 (April 23, 2021)
+* [v1.0.5 issues](https://github.com/LaSalleSoftware/ls-laravelapp-pkg/milestone/6?closed=1)
 
 ## VERSION 1.0.4 (January 21, 2021)
 * [v1.0.4 issues](https://github.com/LaSalleSoftware/ls-laravelapp-pkg/milestone/5?closed=1)
