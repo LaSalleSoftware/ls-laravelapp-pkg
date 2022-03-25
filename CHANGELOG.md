@@ -1,6 +1,9 @@
 # CHANGE LOG
 
-## VERSION 1.0.8 (Coming!)
+## VERSION 1.1.1 (Coming!)
+
+ ## VERSION 1.1.0 (March 25, 2022)
+* [v1.1.0 issues](https://github.com/LaSalleSoftware/ls-laravelapp-pkg/milestone/9?closed=1)
 
  ## VERSION 1.0.7 (January 20, 2022)
 * [v1.0.7 issues](https://github.com/LaSalleSoftware/ls-laravelapp-pkg/milestone/8?closed=1)
