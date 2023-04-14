@@ -10,14 +10,14 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright  (c) 2019-2022 The South LaSalle Trading Corporation
+ * @copyright  (c) 2019-2023 The South LaSalle Trading Corporation
  * @license    http://opensource.org/licenses/MIT
  * @author     Bob Bloom
  * @email      bob.bloom@lasallesoftware.ca
  *
  * @see        https://lasallesoftware.ca
- * @see       https://packagist.org/packages/lasallesoftware/ls-laravelapp-pkg
- * @see       https://github.com/LaSalleSoftware/ls-laravelapp-pkg
+ * @see        https://packagist.org/packages/lasallesoftware/ls-laravelapp-pkg
+ * @see        https://github.com/LaSalleSoftware/ls-laravelapp-pkg
  */
 
 namespace Lasallesoftware\Laravelapp;
