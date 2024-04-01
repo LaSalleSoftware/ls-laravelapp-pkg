@@ -10,7 +10,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright  (c) 2019-2023 The South LaSalle Trading Corporation
+ * @copyright  (c) 2019-2024 The South LaSalle Trading Corporation
  * @license    http://opensource.org/licenses/MIT
  * @author     Bob Bloom
  * @email      bob.bloom@lasallesoftware.ca
@@ -66,8 +66,6 @@ class LaravelappServiceProvider extends ServiceProvider
      */
     protected function loadRoutes()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
-        $this->loadRoutesFrom(__DIR__.'/../routes/channels.php');
         $this->loadRoutesFrom(__DIR__.'/../routes/console.php');
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');  
     }

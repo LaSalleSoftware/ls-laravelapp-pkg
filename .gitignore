@@ -5,5 +5,5 @@
 Thumbs.db
 /vendor
 /.idea
-.vscode/
+/.vscode
 composer.lock
