@@ -1,5 +1,8 @@
 # CHANGE LOG
 
+## VERSION 2.0 (June 22, 2025)
+* [v2.0 issues](https://github.com/LaSalleSoftware/ls-laravelapp-pkg/milestone/16?closed=1)
+
 ## VERSION 1.3 (April 02, 2024)
 * [v1.3 issues](https://github.com/LaSalleSoftware/ls-laravelapp-pkg/milestone/15?closed=1)
 
